@@ -1,0 +1,136 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Overall App Background */
+body {
+  background-color: #f6f6f6;
+}
+
+/* ---------------- HEADER ---------------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background: #ffffff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header img {
+  width: 50px;
+}
+
+header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ff6d00;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #333;
+  transition: 0.3s ease;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #ff6d00;
+}
+
+nav input {
+  padding: 8px 14px;
+  border: 1.5px solid rgb(220, 220, 220);
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+  width: 200px;
+  transition: 0.3s ease;
+}
+
+nav input:focus {
+  border-color: #ff6d00;
+  box-shadow: 0 0 4px rgba(255, 109, 0, 0.5);
+}
+
+/* ---------------- PRODUCT GRID ---------------- */
+.product-grid {
+  padding: 40px 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 30px;
+}
+
+/* ---------------- PRODUCT CARD ---------------- */
+.product-card {
+  background: white;
+  border-radius: 14px;
+  padding: 15px;
+  transition: 0.3s ease;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.07);
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.product-card h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.product-card p {
+  color: #444;
+  margin-bottom: 12px;
+  font-size: 17px;
+}
+
+/* Add to Cart Button */
+.product-card button {
+  width: 100%;
+  padding: 10px;
+  background: #ff6d00;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.product-card button:hover {
+  background: #e25f00;
+}
+
+/* ---------------- FOOTER ---------------- */
+footer {
+  background: #ffffff;
+  padding: 18px;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 40px;
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.05);
+}
